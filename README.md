@@ -1,4 +1,4 @@
-# # Two-Stage 5 V CMOS Operational Amplifier in SKY130
+# Two-Stage 5 V CMOS Operational Amplifier in SKY130
 
 This repository contains the technical implementation of a two-stage CMOS operational amplifier designed using the open-source SkyWater SKY130 process.
 
