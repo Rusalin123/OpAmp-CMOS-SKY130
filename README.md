@@ -28,6 +28,4 @@ The project includes:
 
 The amplifier was designed and verified through schematic-level and layout-level simulations. The layout was implemented using Magic VLSI and verified using DRC and LVS checks.
 
-## Author
 
-Vela Cristian-Rusalin
