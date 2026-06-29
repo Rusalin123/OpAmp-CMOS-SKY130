@@ -1,0 +1,55 @@
+# Layout Implementation
+
+This folder contains the physical layout implementation and extracted files of the two-stage CMOS operational amplifier designed in the SkyWater SKY130 technology.
+
+The layout was implemented using the 5 V thick-oxide transistor devices from the SKY130 PDK, corresponding to the schematic-level design. The layout includes the complete transistor-level implementation of the amplifier, including the differential input stage, current mirrors, second gain stage and compensation network.
+
+## Folder Structure
+
+* `magic/` – Magic VLSI layout files
+* `gds/` – exported GDSII layout file
+* `extracted/` – extracted layout data
+* `spice/` – post-layout, LVS and parasitic extracted SPICE netlists
+
+## Included Files
+
+* `opamp_layout.mag` – Magic VLSI layout file
+* `opamp_layout.gds` – exported GDSII layout
+* `opamp_layout.ext` – extracted layout file
+* `opamp_layout.spice` – SPICE netlist generated from the layout
+* `opamp_layout_lvs.spice` – layout netlist used for LVS verification
+* `opamp_layout_parasitic.spice` – parasitic extracted netlist used for post-layout simulation
+* `opamp_layout_subckt.spice` – subcircuit version of the extracted layout
+
+## Layout Description
+
+The layout implements the complete two-stage CMOS operational amplifier using SKY130 5 V devices. The input differential pair was placed with attention to symmetry in order to reduce mismatch effects. The current mirror devices were arranged carefully to preserve matching between transistors.
+
+The supply and ground rails were routed using wider metal paths in order to improve reliability and reduce unwanted voltage drops. Metal interconnections were implemented using the available SKY130 routing layers, while the passive components were placed and connected according to the design requirements.
+
+The compensation network includes a Miller capacitor and an additional transistor used as part of the compensation structure. This helps improve the frequency stability of the amplifier.
+
+## Technology and Devices
+
+* Technology: SkyWater SKY130
+* Supply voltage: 5 V
+* MOS devices: 5 V thick-oxide NMOS and PMOS transistors
+* PMOS layout device: `sky130_fd_pr__pfet_g5v0d10v5`
+* NMOS layout device: `sky130_fd_pr__nfet_g5v0d10v5`
+* Capacitor: SKY130 MIM capacitor
+* Resistor: SKY130 high-resistance poly resistor
+* Layout type: full-custom analog layout
+
+## Verification
+
+The layout was verified using DRC checks in Magic VLSI and compared against the schematic using LVS verification with Netgen.
+
+After extraction, the generated SPICE netlists were used for post-layout simulation in order to evaluate the influence of parasitic elements on the amplifier behavior.
+
+## Tools Used
+
+* Magic VLSI for full-custom layout implementation
+* Netgen for LVS verification
+* KLayout for GDSII visualization
+* Ngspice for post-layout simulation
+* SKY130 PDK design rules and device layers
