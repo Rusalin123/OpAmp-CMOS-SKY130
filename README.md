@@ -21,6 +21,4 @@ This repository contains my Master's dissertation project developed using the op
 - Netgen
 - KLayout
 
-## Repository structure
 
-...
