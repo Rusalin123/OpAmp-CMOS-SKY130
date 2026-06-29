@@ -1,0 +1,57 @@
+* SPICE3 file created from opamp_layout.ext - technology: sky130A
+
+X0 ZREF VGND VGND sky130_fd_pr__res_high_po_0p35 l=99.66
+X1 ZREF VDD VGND sky130_fd_pr__res_high_po_0p35 l=99.66
+X2 m1_4161_n1993# vin_n w_4684_n404# w_4684_n404# sky130_fd_pr__pfet_g5v0d10v5 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.6
+X3 w_4684_n404# vin_p m1_5112_n1960# w_4684_n404# sky130_fd_pr__pfet_g5v0d10v5 ad=13.34 pd=93.74 as=5.8 ps=40.58 w=20 l=0.6
+X4 m1_4161_n1993# m1_4161_n1993# VGND VGND sky130_fd_pr__nfet_g5v0d10v5 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=0.6
+X5 VGND m1_4161_n1993# m1_5112_n1960# VGND sky130_fd_pr__nfet_g5v0d10v5 ad=9.28 pd=65.74 as=3.48 ps=25.16 w=6 l=0.6
+X6 VDD VGND w_4684_n404# VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=0.6
+X7 VGND m1_5112_n1960# Vout VGND sky130_fd_pr__nfet_g5v0d10v5 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.6
+X8 Vout VGND VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=4.35 pd=30.58 as=4.35 ps=30.58 w=15 l=2
+X9 ZREF VGND VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.74 pd=12.58 as=7.83 ps=55.74 w=6 l=0.6
+X10 m1_5786_540# VDD m1_5112_n1960# VGND sky130_fd_pr__nfet_g5v0d10v5 ad=1.74 pd=12.58 as=0 ps=0 w=6 l=0.6
+X11 m1_5786_540# Vout sky130_fd_pr__cap_mim_m3_1 l=20 w=20
+C0 VDD w_4684_n404# 5.01622f
+C1 m1_5786_540# vin_p 0.02599f
+C2 vin_p m1_5112_n1960# 0.81709f
+C3 vin_n m1_4161_n1993# 0.8345f
+C4 m1_5786_540# w_4684_n404# 0.09763f
+C5 w_4684_n404# m1_5112_n1960# 3.58381f
+C6 Vout m1_4161_n1993# 0
+C7 vin_p m1_4161_n1993# 0.00996f
+C8 w_4684_n404# m1_4161_n1993# 3.76102f
+C9 VDD m1_8930_n1108# 0.13237f
+C10 m1_5786_540# m1_8930_n1108# 0.00231f
+C11 VDD m1_5786_540# 1.65155f
+C12 VDD m1_5112_n1960# 1.84454f
+C13 m1_5786_540# m1_5112_n1960# 0.53826f
+C14 VDD m1_4161_n1993# 0.18929f
+C15 vin_n Vout 0.02719f
+C16 m1_5786_540# m1_4161_n1993# 0
+C17 m1_4161_n1993# m1_5112_n1960# 0.32602f
+C18 vin_n vin_p 0.07851f
+C19 vin_p Vout 0.05248f
+C20 vin_n w_4684_n404# 1.33236f
+C21 w_4684_n404# Vout 0.10005f
+C22 w_4684_n404# ZREF 0.00497f
+C23 w_4684_n404# vin_p 1.27596f
+C24 VDD vin_n 0.34428f
+C25 m1_8930_n1108# Vout 0.0177f
+C26 VDD Vout 5.24623f
+C27 m1_5786_540# vin_n 0.00566f
+C28 vin_n m1_5112_n1960# 0
+C29 VDD ZREF 2.37018f
+C30 VDD vin_p 0.46953f
+C31 m1_5786_540# Vout 36.13747f
+C32 Vout m1_5112_n1960# 0.87089f
+C33 m1_8930_n1108# VGND 0.11936f
+C34 m1_5786_540# VGND 2.779f **FLOATING
+C35 Vout VGND 14.44536f
+C36 w_4684_n404# VGND 16.69403f **FLOATING
+C37 m1_5112_n1960# VGND 5.17994f **FLOATING
+C38 m1_4161_n1993# VGND 5.34601f **FLOATING
+C39 vin_p VGND 0.09938f
+C40 vin_n VGND 0.10611f
+C41 ZREF VGND 2.4857f
+C42 VDD VGND 51.8956f

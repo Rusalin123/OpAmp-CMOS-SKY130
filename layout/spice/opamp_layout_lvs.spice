@@ -1,0 +1,49 @@
+* NGSPICE file created from opamp_layout.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_high_po_0p35_QUQJ7B a_n367_n2066# a_n497_n2196# a_297_1634#
+X0 a_297_1634# a_n367_n2066# a_n497_n2196# sky130_fd_pr__res_high_po_0p35 l=99.66
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_KL7KGA a_n60_n2097# a_60_n2000# w_n318_n2297#
++ a_n118_n2000# VSUBS
+X0 a_60_n2000# a_n60_n2097# a_n118_n2000# w_n318_n2297# sky130_fd_pr__pfet_g5v0d10v5 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.6
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_WBHQJJ a_60_n600# a_n252_n822# a_n118_n600# a_n60_n688#
+X0 a_60_n600# a_n60_n688# a_n118_n600# a_n252_n822# sky130_fd_pr__nfet_g5v0d10v5 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=0.6
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_KL97BA a_n60_n697# a_60_n600# w_n318_n897# a_n118_n600#
++ VSUBS
+X0 a_60_n600# a_n60_n697# a_n118_n600# w_n318_n897# sky130_fd_pr__pfet_g5v0d10v5 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=0.6
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_ZKHQJZ a_60_n2000# a_n252_n2222# a_n60_n2088#
++ a_n118_n2000#
+X0 a_60_n2000# a_n60_n2088# a_n118_n2000# a_n252_n2222# sky130_fd_pr__nfet_g5v0d10v5 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.6
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_V6J3CS a_n200_n1597# a_200_n1500# w_n458_n1797#
++ a_n258_n1500# VSUBS
+X0 a_200_n1500# a_n200_n1597# a_n258_n1500# w_n458_n1797# sky130_fd_pr__pfet_g5v0d10v5 ad=4.35 pd=30.58 as=4.35 ps=30.58 w=15 l=2
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_BNHTNG c1_n2146_n2000# m3_n2186_n2040# VSUBS
+X0 c1_n2146_n2000# m3_n2186_n2040# sky130_fd_pr__cap_mim_m3_1 l=20 w=20
+.ends
+
+.subckt opamp_layout VDD vin_n vin_p VGND Vout ZREF
+XR1 VGND VGND ZREF sky130_fd_pr__res_high_po_0p35_QUQJ7B
+XR2 VDD VGND ZREF sky130_fd_pr__res_high_po_0p35_QUQJ7B
+XXM1 vin_n m1_4161_n1993# w_4684_n404# w_4684_n404# VGND sky130_fd_pr__pfet_g5v0d10v5_KL7KGA
+XXM2 vin_p w_4684_n404# w_4684_n404# m1_5112_n1960# VGND sky130_fd_pr__pfet_g5v0d10v5_KL7KGA
+XXM3 m1_4161_n1993# VGND VGND m1_4161_n1993# sky130_fd_pr__nfet_g5v0d10v5_WBHQJJ
+XXM4 VGND VGND m1_5112_n1960# m1_4161_n1993# sky130_fd_pr__nfet_g5v0d10v5_WBHQJJ
+XXM5 VGND VDD VDD w_4684_n404# VGND sky130_fd_pr__pfet_g5v0d10v5_KL97BA
+XXM6 VGND VGND m1_5112_n1960# Vout sky130_fd_pr__nfet_g5v0d10v5_ZKHQJZ
+XXM7 VGND Vout VDD VDD VGND sky130_fd_pr__pfet_g5v0d10v5_V6J3CS
+XXM9 m1_5786_540# VGND m1_5112_n1960# VDD sky130_fd_pr__nfet_g5v0d10v5_WBHQJJ
+XXM8 VGND ZREF VDD VDD VGND sky130_fd_pr__pfet_g5v0d10v5_KL97BA
+XXC1 m1_5786_540# Vout VGND sky130_fd_pr__cap_mim_m3_1_BNHTNG
+.ends
+
