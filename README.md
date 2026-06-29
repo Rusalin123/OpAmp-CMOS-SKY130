@@ -50,3 +50,6 @@ The main goal of the project was to implement and validate the amplifier using a
 
 The full dissertation document is not included in this repository. This repository only contains the technical project files and selected design artifacts.
 
+## Author
+
+Vela Cristian-Rusalin
