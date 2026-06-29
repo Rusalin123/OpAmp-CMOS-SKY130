@@ -41,14 +41,10 @@ The main goal of the project was to implement and validate the amplifier using a
 
 ## Main Features
 
-- Two-stage CMOS operational amplifier
-- PMOS differential input pair
-- Current mirror biasing network
-- Second gain stage
-- Miller compensation
-- Full-custom layout implementation
-- DRC/LVS verification
-- Post-layout extracted netlists
+- Designed for 5 V supply voltage
+- Implemented using SKY130 5 V thick-oxide MOS transistors
+- NMOS device: `sky130_fd_pr__nfet_g5v0d10v5`
+- PMOS device: `sky130_fd_pr__pfet_g5v0d10v5`
 
 ## Note
 
